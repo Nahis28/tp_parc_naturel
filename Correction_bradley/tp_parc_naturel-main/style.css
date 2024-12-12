@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius&family=Delius+Swash+Caps&family=Pacifico&display=swap");
+.sousHeader h2, header nav a, #solutions > div h2, #solutions > div h1, article h1 {
+  font-family: "Delius Swash Caps";
+  color: white;
+  font-weight: bold;
+}
+
+.grandTitre h1 {
+  text-align: center;
+  font-family: "delius";
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 4px 4px 4px rgba(3, 104, 166, 0.5411764706);
+}
+
+body {
+  margin: 0;
+  font-family: "delius";
+}
+
+article {
+  background-image: linear-gradient(rgba(170, 255, 255, 0.662745098), white);
+  display: flex;
+  flex-direction: column;
+  padding: 1% 15%;
+}
+article div div {
+  margin-top: 50px;
+}
+article h1 {
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+  border-radius: 6px;
+  font-size: 2.4em;
+}
+article .poissonClown {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 10px;
+}
+article .poissonClown div:nth-child(2) img {
+  border-radius: 8px;
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  width: 80% !important;
+}
+article .poissonClown .texte {
+  font-size: 1em;
+  background-color: #3cb9b9;
+  color: white;
+  align-self: center;
+  padding: 2.5%;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+article .poissonAnge {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+article .poissonAnge div:nth-child(2) img {
+  border-radius: 8px;
+  display: flex;
+  justify-self: center;
+  align-items: start;
+  width: 100%;
+}
+article .poissonAnge div:nth-child(1) {
+  font-size: 1em;
+  background-color: #3cb9b9;
+  color: white;
+  padding: 2.5%;
+  margin-right: 2%;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+article .acropora {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 10px;
+}
+article .acropora div:nth-child(2) img {
+  border-radius: 8px;
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  width: 80%;
+}
+article .acropora div:nth-child(1) {
+  background-color: #3cb9b9;
+  color: white;
+  padding: 2.5%;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+article .sinularia {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+article .sinularia div:nth-child(2) img {
+  border-radius: 8px;
+  display: flex;
+  justify-self: end;
+  align-items: center;
+  width: 80%;
+}
+article .sinularia div:nth-child(1) {
+  background-color: #3cb9b9;
+  padding: 2.5%;
+  align-self: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+
+hr {
+  border: 2px solid #3cb9b9;
+  width: 40%;
+  margin-bottom: 5%;
+}
+
+footer {
+  text-align: center;
+  color: #023859;
+  font-family: "delius";
+  font-size: 25px;
+}
+
+#solutions {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-color: #0367A6;
+  color: white;
+}
+#solutions li {
+  list-style: none;
+}
+#solutions a {
+  text-decoration: none;
+  color: #023859;
+}
+#solutions a:hover {
+  color: #3cb9b9;
+}
+#solutions > div {
+  text-align: center;
+}
+#solutions > div h1 {
+  border-bottom: 2px solid #3cb9b9;
+  display: inline;
+  justify-self: center;
+}
+#solutions > div h2 {
+  border-bottom: 2px solid #3cb9b9;
+  display: inline;
+  justify-self: center;
+}
+#solutions div #bg_solution_img {
+  margin: 20px 0 20px 0;
+}
+#solutions div#list_solutions {
+  display: flex;
+}
+#solutions div#list_solutions .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+  /* Style the front side (fallback if image is missing) */
+  /* Style the back side */
+}
+#solutions div#list_solutions .grid .button {
+  justify-self: center;
+  color: #023859;
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+  padding: 15px 32px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+#solutions div#list_solutions .grid .button:hover {
+  color: white;
+  background-color: #023859;
+}
+#solutions div#list_solutions .grid .flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin-left: 150px;
+}
+#solutions div#list_solutions .grid .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+#solutions div#list_solutions .grid .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+#solutions div#list_solutions .grid .flip-card-front, #solutions div#list_solutions .grid .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Safari */
+  backface-visibility: hidden;
+}
+#solutions div#list_solutions .grid .flip-card-front {
+  color: #023859;
+  font-family: "delius";
+  background: white;
+  border-radius: 25px;
+  font-size: 14px;
+}
+#solutions div#list_solutions .grid .flip-card-back {
+  background-color: #3cb9b9;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 25px;
+}
+#solutions div#list_solutions .grid ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+header {
+  padding: 10px;
+  background-color: #0367A6;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-size: 1.1em;
+  margin: 0px;
+}
+header nav a {
+  font-size: 20px;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: #023859;
+}
+
+.grandeImage {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr 1fr;
+  background-image: url(img/Grande-Barriere-corail.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  width: 100%;
+  height: 700px;
+}
+
+.grandTitre {
+  background-color: rgba(60, 185, 185, 0.631372549);
+  width: 1000px;
+  height: auto;
+  padding: 100px 150px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-row: 2;
+  text-align: center;
+  display: flex;
+}
+.grandTitre h1 {
+  font-size: 60px;
+  margin: 0;
+  align-self: center;
+}
+
+.sousHeader {
+  background-color: #0367A6;
+  text-align: center;
+  padding: 6%;
+}
+.sousHeader h2 {
+  margin: 0;
+  font-size: 28px;
+}
+.sousHeader p {
+  font-family: "delius";
+  color: white;
+  font-size: 24px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  padding: 30px 20px;
+  background: #023859;
+}
+main h1 {
+  color: white;
+  font-family: "Delius Swash Caps";
+  text-align: center;
+  font-size: 36px;
+  margin: 30px 60px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.menace {
+  color: #023859;
+  font-family: "delius";
+  background: white;
+  margin: 25px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+.menace h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.menace ul {
+  padding: 10px 10px;
+  margin: 0 20px;
+  list-style-type: none;
+}
+.menace li {
+  padding: 0 5px;
+}
+.menace ul :nth-child(even) {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=style.css.map */
